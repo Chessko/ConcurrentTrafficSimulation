@@ -1,10 +1,20 @@
-# CPPND: Program a Concurrent Traffic Simulation
+# CPPND: Concurrent Traffic Simulation
+
+## Learnings
+This project had been part of the [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213) I completed. I had been developing a Concurrent Traffic Simulation under expert guidance which got me to learn about and gain practical experience in:
+* Suitable and thread-safe communication protocol between several threads (cars & traffic lights)
+* Mutexes
+* Locks
+* Promises & futures
+* Condition variables
+
+You can find the exact project tasks at the bottom of this ReadMe. 
+
+## Description
 
 <img src="data/traffic_simulation.gif"/>
 
-This is the project for the fourth course in the [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213): Concurrency. 
-
-Throughout the Concurrency course, you have been developing a traffic simulation in which vehicles are moving along streets and are crossing intersections. However, with increasing traffic in the city, traffic lights are needed for road safety. Each intersection will therefore be equipped with a traffic light. In this project, you will build a suitable and thread-safe communication protocol between vehicles and intersections to complete the simulation. Use your knowledge of concurrent programming (such as mutexes, locks and message queues) to implement the traffic lights and integrate them properly in the code base.
+A traffic simulator. Crash-safe thanks to a suitable inter-thread communication protocol through which cars and traffic lights can communicate with each other. 
 
 ## Dependencies for Running Locally
 * cmake >= 2.8
@@ -27,7 +37,7 @@ Throughout the Concurrency course, you have been developing a traffic simulation
 3. Compile: `cmake .. && make`
 4. Run it: `./traffic_simulation`.
 
-## Project Tasks
+## Project Tasks Details
 
 When the project is built initially, all traffic lights will be green. When you are finished with the project, your traffic simulation should run with red lights controlling traffic, just as in the .gif file above. See the classroom instruction and code comments for more details on each of these parts. 
 
